@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js" //to be able to run npm start instead of node <name>.js
+    "start": "node app.js" 
   },
   "author": "Trevor Knott",
   "license": "ISC",
