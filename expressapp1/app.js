@@ -3,6 +3,9 @@ var app = express();  //makes instance of express
 
 var port = 5280;
 
+//static dir  for statics or imports 
+ app.use(express.static('public'));  //tells public dir is static dir if resorces not found call the req
+
  app.get('/', function(req, res){    //what to do whn request comes in    ....  get will handle get rquest when comes in to '<link>'
     res.send("When other websites give you  yada yda yada ..");
  });  
