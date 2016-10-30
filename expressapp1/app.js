@@ -14,8 +14,8 @@ var port = 8000;
 
  app.get('/routing', function(req, res){
      res.send('Aloha Routing');
- })  
+ });
 
  app.listen(port, function(err){
     console.log('The server is running on port '+ port);
- })
+ });
