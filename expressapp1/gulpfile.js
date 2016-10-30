@@ -10,13 +10,13 @@ gulp.task('style', function(){
 
 gulp.task('inject', function(){
     var wiredep = require('wiredep').stream;
-    var options= { 
+    var options = { 
         bowerJson: require('./bower.json'),
         directory: './bower_components'
     //hands on 10
 }
 
-    return gulp.src('./src/views*.html')
+    return gulp.src('./src/views/*.html')
         .pipe(wiredep(options))
-        .pipe(gulp.dest('./src/views'()));
-})
+        .pipe(gulp.dest('./src/views'));
+});
